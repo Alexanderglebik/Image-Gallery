@@ -1,0 +1,99 @@
+
+* {
+    font-family: 'Lobster', cursive;
+}
+.loader{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom: 0;
+    left:0;
+    background-color: #dbdbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.radius__img {
+    border-radius: 2px;
+}
+
+.pos__img {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    overflow:hidden;
+    max-height: 0;
+    transition:all .3s;
+}
+#loader_container{
+    width: 50%;
+    margin: 10px auto;
+}
+.pagination_pos {
+    position: relative;
+    top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.body__background {
+    background-color: #dbdbdb;
+    transition: all .9s;
+}
+
+.pos__switch {
+    position: relative;
+    top: 45px;
+    left: 95%;
+    width: 5%;
+}
+
+.pos__nav {
+    width: 40%;
+    margin: 0 auto;
+}
+
+
+.pulsate {
+    -webkit-animation: pulsate 2s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 1.0;
+}
+@-webkit-keyframes pulsate {
+    0% { 
+        opacity: 0.5;
+    }
+    50% { 
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: 0.5;
+    }
+}
+
+.style__text{
+    font-size: 60px; 
+    color: black; 
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.style__progres {
+    background-color: #fafafa;
+}
+
+.style__indeterminate {
+background-color: #ee6e73 !important;
+}
+
+.switch label input[type="checkbox"]:checked + .lever::after { 
+background-color: #3b3a3a;
+}
+
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: #fafaff;
+}
